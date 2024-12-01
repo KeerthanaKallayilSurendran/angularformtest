@@ -14,9 +14,8 @@ export class LoginComponent {
   password: string = '';
   title = 'formTest';
 
-  // Define credentials as constants
-  private readonly validUsername = 'touchworld';
-  private readonly validPassword = 'touchworldTech';
+   testUsername = 'touchworld';
+   testPassword = 'touchworldTech';
 
   constructor(private router: Router) {}
 
@@ -27,11 +26,11 @@ export class LoginComponent {
     }
 
     if (
-      this.userName === this.validUsername &&
-      this.password === this.validPassword
+      this.userName === this.testUsername &&
+      this.password === this.testPassword
     ) {
       alert('Welcome to the website');
-      this.router.navigate(['list']); // Navigate to the 'list' route
+      this.router.navigate(['list']); 
     } else {
       alert('Username or password is incorrect');
     }
